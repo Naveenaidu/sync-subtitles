@@ -128,5 +128,4 @@ main = do
     let delay = read (args !! 0)
     case parse parseSubtitles "stdin" contents of
         Left err -> print err
-        -- Right msg -> undefined
         Right subtitles -> mapM_ print (syncSubtitles subtitles delay)
