@@ -124,8 +124,8 @@ parseSubtitles = do
 
 main = do  
     contents <- readFile "dumbo.srt"
-    args <- getArgs
-    let delay = read (args !! 0)
+    args: _ <- getArgs
+    let delay = read (args)
     case parse parseSubtitles "stdin" contents of
         Left err -> print err
         Right subtitles -> mapM_ print (syncSubtitles subtitles delay)
