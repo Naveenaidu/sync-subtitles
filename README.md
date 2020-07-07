@@ -3,7 +3,7 @@
 
 ## Introduction
 
-No more worries about the unsynched subtitles. sync-subtitles is a new reformed software that will do state of the art video and audio processing to automatically sync the subtitles.
+No more worries about the unsynched subtitles. sync-subtitles is a new reformed software that will do **state of the art video and audio processing** to automatically sync the subtitles.
 
 To run the file:
 ```
